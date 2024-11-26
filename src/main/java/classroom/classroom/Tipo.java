@@ -1,7 +1,7 @@
 package classroom;
 
 public enum Tipo {
-	DISCIPLINAR(10, "Disciplinar"),FUNDAMENTACION(20, "Fundamentacion"),ELECTIVA(30,"Electiva");///Agrego estos parámetros porque el constructor necesita de dos argumentos para inicializarse
+	DISCIPLINAR(10, "Disciplinar"),FUNDAMENTACION(20, "Fundamentacion"),ELECTIVA(30,"Electiva");
 	
 	private int codigo;
 	private String nombre;

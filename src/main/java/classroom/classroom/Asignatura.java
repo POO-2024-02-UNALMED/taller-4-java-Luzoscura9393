@@ -5,18 +5,16 @@ package classroom;
 public class Asignatura {
 
     public String nombre;
-    ///String n = nombre; lo quito porque se repite el atributo
-    public double codigoInterno; ///Cambio el tipo a double para que sea compatible con los métodos cambiados
+    public double codigoInterno; 
     public int codigoExterno;
     public Tipo tipo;
 
     public Asignatura() {
         this("Sin nombre",Tipo.FUNDAMENTACION);
-        ///this(0); lo quito porque la clase no tiene ningún atributo que sea un número
     }
 
     public Asignatura(Tipo tipo,int codigoInterno) {
-        this("Sin nombre", codigoInterno, 0,tipo); ///Intercambio tipo con codigoInterno para que no haya ambiguedad entre los constructores
+        this("Sin nombre", codigoInterno, 0,tipo); 
     }
 
     public Asignatura(int codigoExterno, Tipo tipo) {
@@ -43,7 +41,7 @@ public class Asignatura {
 
     public void cambiarDatos(double codigoInterno) {
         this.codigoInterno = codigoInterno;
-    }///Lo cambio para dar prioridad al métdo de abajo
+    }
 
     public void cambiarDatos(int codigoExterno) {
         this.codigoExterno = codigoExterno;
